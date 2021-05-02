@@ -1,0 +1,35 @@
+@font-face{
+    src:url(../../font/font-work-sans/WorkSans-Regular.otf);
+    font-family: WorkSans;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family:WorkSans;
+}
+.col{
+    float: left
+}
+.two-col{
+    width: 50%;
+}
+.three-col{
+    width: 33.33333%;
+    display: inline-block;
+}
+.clear{
+    clear: both;
+}
+.time-open-close p{
+    display: inline;
+    margin-right: 40px;
+}
+.time-open-close{
+    
+}
+.btn-header{
+    float: right;
+}
