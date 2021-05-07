@@ -1,5 +1,5 @@
 @font-face{
-    src:url(../../font/font-work-sans/WorkSans-Regular.otf);
+    src:url(../../font/font-work-sans/WorkSans-Light.otf);
     font-family: WorkSans;
 }
 *{
@@ -26,6 +26,15 @@ html{
 .time-open-close p{
     display: inline;
     margin-right: 40px;
+
+}
+#first-header{
+    width: 100%;
+    padding: 1% 5%;
+    background-color: #493129;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
 }
 .time-open-close{
     
@@ -33,3 +42,104 @@ html{
 .btn-header{
     float: right;
 }
+.btn-header button{
+    width: 100px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #493129;
+    border: #fff 1px solid;
+    padding: 2px 8px;
+    padding-top: 4px;
+}
+#nav-banner{
+    position: relative;
+
+}
+.nav{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color:rgba(0, 0, 0, 0);
+}
+.img-logo{
+    width: 8%;
+    margin-left: 3%;
+}
+.search-cell{
+    position: relative;
+    top: 40px;
+    width: 20%;
+}
+.search-input{
+    width: 100%;
+    border: none;
+    border-bottom: #DFC9C9 1px solid;
+    padding: 4px 2px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #DFC9C9;
+    border-radius: 0;
+}
+/*placeholder format*/
+::placeholder{
+    font-size: 16px;
+    color: #DFC9C9;
+    font-family: WorkSans;
+}
+/*focus input ẩn*/
+input:focus{
+    outline: none;
+}
+.img-search{
+    width: 20px;
+    position: absolute;
+    right: 0;
+}
+/*menu*/
+.nav-menu{
+    width: 57%;
+    padding-left: 6%;
+    margin-top:2%;
+}
+.list-menu {
+    list-style-type: none;
+}
+.list-menu li{
+    display: inline;
+}
+.list-menu li a{
+    text-decoration: none;
+    margin: 4px 16px;
+    font-size: 22px;
+    font-weight: 500;
+    color:#FFF9F9;
+}
+.list-menu li a:hover{
+    border-bottom: #DFC9C9 2px solid;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.cart{
+width: 3%;
+margin-top: 1%;
+}
+.img-cart{
+    width: 100%;
+}
+/*hiệu ứng cuộn menu*/
+sticknav {
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    left: 0px;
+    right: 0px;
+    position: relative;
+    z-index: 9999;
+
+
+}
+.fixed { 
+    position:fixed;
+    animation-duration: 5s;
+}
+    /* Kết thúc Stick Nav */

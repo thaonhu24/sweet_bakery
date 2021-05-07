@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Bakery</title>
+    <link rel="stylesheet" href="../layout/header/css/header.css">
+    <link rel="stylesheet" href="../layout/footer/footer.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.min.js' type='text/javascript'></script> -->
+    <!-- <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script> -->
+</head>
+<body>
+    <div id="first-header">
+        <div class="time-open-close col">
+            <p class="time-open">OPEN TIME: 8:00 am</p>
+            <p class="time-close">CLOSE TIME: 8:00 pm</p>
+        </div>
+        <div class="btn-header ">
+            <button class="btn-log-in">Đăng nhập</button>
+            <button class="btn-log-up">Đăng kí </button>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="nav-banner">
+        <sticknav>
+            <!-- (Đoạn code của navigation bar ở đây) -->
+            <div class="nav">
+                <img src="../layout/img/sweet-bakery (2).png" alt="" class="img-logo col">
+                <form action="" id="search" class="search-cell col">
+                    <input class="search-input" type="text" placeholder="Bạn muốn tìm gì nè...">
+                    <input class="img-search" type="image" src="../layout/img/magnifying-glass.png" alt="">
+                </form>
+                <div class="nav-menu col">
+                    <ul class="list-menu">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT US</a></li>
+                        <li><a href="">MENU</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">EVENT</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-navicon icon-menu icon-open"></i>
+                <i class="fa fa-close icon-menu icon-close"></i>
+                
+                <div class="cart col">
+                    <img src="../layout/img/trolley (1).png" alt="" class="img-cart">
+                </div>
+                <div class="clear"></div>
+            </div>
+        </sticknav>
+        <div class="banner">
+            <div class="slideshow-container">
+                <div class="mySlides fade" id="bakery">
+                    <div class="text">
+                        <p class="sweet-header">Sweet</p>
+                        <p class="bakery-header">Bakery</p>
+                        <p class="slogan">NGỌT TỪ TRONG TIM, BÌNH YÊN TRONG TỪ KHOẢNH KHẮC</p>
+                    </div>
+                </div>
+                <div class="mySlides fade" id="merry">
+                    <div class="text">
+                        <div class="content-banner">
+                            <p class="time-event">KHUYẾN MÃI GIÁNG SINH 24/12</p>
+                            <p class="name-event">Merry Christmas</p>
+                            <p class="adv">Giáng sinh bên Sweet cùng loạt KHUYẾN MÃI 50%</p>
+                            <p class="sub-adv">Cùng Sweet Bakery đón giáng sinh thật Sweet</p>
+                            <button class="btn-join">THAM GIA NGAY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides fade" id="voucher">
+                        <div class="text">
+                            <div class="content-banner">
+                                <p class="time-event">TỪ 10/12 - 24/12 MUA BÁNH TRÚNG QUÀ </p>
+                                <p class="name-event">Săn ngay VOUCHER vô giá</p>
+                                <p class="adv">MÙA LỄ VOUCHER</p>
+                                <p class="sub-adv">Đón nhận điều ngọt ngào từ SWEET</p>
+                                <button class="btn-join">THAM GIA NGAY</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center" class="btn-slide">
+                <span class="dot" onclick="currentSlide(0)"></span> 
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="event">
+            <p class="event-title">Sự kiện hấp dẫn</p>
+            <div class="body-event">
+                <div class="col full-width inf-event">
+                    <p class="name-event-title">Khuyến mãi Giáng sinh</p>
+                    <p class="content-event">Ngày 24/12 sắp tới cùng gia đình thưởng thức những chiếc bánh ngọt ngào của Sweat Bakery đón giáng sinh an lành.</p>
+                    <button class="btn-join-event">THAM GIA</button>
+                </div>
+                <div class="col full-width img-event">
+                    <img src="./assets/img/sweet-bakery.jpg" alt="">
+                </div>
+                <a href="" class="more">Xem thêm</a>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!--Sản phẩm nổi bật-->
+        <div class="produce">
+            <div class="background">
+                <p class="event-title">Sản phẩm nổi bật</p>
+                <div class="list-product">
+                    <div class="produce-member col haft-width">
+                        <div class="sale">
+                            <p>50%</p>
+                        </div>
+                        <div class="img-containt">
+                            <img src="./assets/img/blueberry-1.jpg" alt="" class="img-produce">
+                        </div>
+                        <p class="name-sp">Cheesecake Blueberry</p>
+                        <div class="price">
+                            <p class="price-old">40.000đ</p>
+                            <p class="price-new">20.000đ</p>
+                        </div>
+                        <div class="button-order">
+                            <button class="btn-order">ĐẶT</button>
+                        </div>
+                    </div>
+                    <div class="produce-member col haft-width">
+                        <div class="sale">
+                            <p>50%</p>
+                        </div>
+                        <div class="img-containt">
+                            <img src="./assets/img/DAU-4.jpg" alt="" class="img-produce">
+                        </div>
+                        <p class="name-sp">Bánh kem Dâu tây</p>
+                        <div class="price">
+                            <p class="price-old">400.000đ</p>
+                            <p class="price-new">200.000đ</p>
+                        </div>
+                        <div class="button-order">
+                            <button class="btn-order">ĐẶT</button>
+                        </div>
+                    </div>
+                    <div class="produce-member col haft-width">
+                        <div class="sale">
+                            <p>50%</p>
+                        </div>
+                        <div class="img-containt">
+                            <img src="./assets/img/dao.jpg" alt="" class="img-produce">
+                        </div>
+                        <p class="name-sp">Macaron Đào</p>
+                        <div class="price">
+                            <p class="price-old">40.000đ</p>
+                            <p class="price-new">20.000đ</p>
+                        </div>
+                        <div class="button-order">
+                            <button class="btn-order">ĐẶT</button>
+                        </div>
+                    </div>
+                    <div class="produce-member col haft-width">
+                        <div class="sale">
+                            <p>50%</p>
+                        </div>
+                        <div class="img-containt">
+                            <img src="./assets/img/socola.jpg" alt="" class="img-produce">
+                        </div>
+                        <p class="name-sp">Tiramisu Socola</p>
+                        <div class="price">
+                            <p class="price-old">40.000đ</p>
+                            <p class="price-new">20.000đ</p>
+                        </div>
+                        <div class="button-order">
+                            <button class="btn-order">ĐẶT</button>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="review">
+            <div class="review-title"><p>Khách hàng nói gì về chúng tôi</p></div>
+            <div class="review-slide">
+                <div class="slideshow-container">
+                    <div class="review-member fade-rv">
+                        <div class="img-review  col two-col">
+                            <img src="./assets/img/mau-banh-kem-socola-dep-2.jpg" alt="">
+                        </div>
+                        <div class="review-customer col two-col">
+                            <img src="./assets/img/Khach-hàng-3.jpg" alt="" class="img-customer">
+                            <p class="name-cus">Ms.Mai</p>
+                            <p class="review-content">
+                                Đặt bánh sinh nhật cho con gái. Bạn tư vấn nhiệt tình. Giao hàng nhanh. Trang trí đẹp mà bánh cũng ngon nữa. 
+                            </p>
+                            <p class="name-sp-review">Sản phẩm: Bánh sinh nhật Socola</p>
+                            <p class="number-sp">Số lượng: 1</p>
+                        </div>
+                    </div>
+                    <div class="review-member fade-rv">
+                        <div class="img-review  col two-col">
+                            <img src="./assets/img/tiramisuu.jpg" alt="">
+                        </div>
+                        <div class="review-customer col two-col">
+                            <img src="./assets/img/images (10).jfif" alt="" class="img-customer">
+                            <p class="name-cus">Hồng Ngọc</p>
+                            <p class="review-content">
+                               Tiramisu Socola ở đây ngon lắm nha, còn trang trí rất là xinh nữa, sẽ ủng hộ thêm nè 
+                            </p>
+                            <p class="name-sp-review">Sản phẩm: Bánh Tiramisu Socola</p>
+                            <p class="number-sp">Số lượng: 1</p>
+                        </div>
+                    </div>
+                    <div class="review-member fade-rv">
+                        <div class="img-review  col two-col">
+                            <img src="./assets/img/pho-mai-3.jpg" alt="">
+                        </div>
+                        <div class="review-customer col two-col">
+                            <img src="./assets/img/thumbnail5.jpg" alt="" class="img-customer">
+                            <p class="name-cus">Tam Tam</p>
+                            <p class="review-content">
+                                Cheesecake xênh xẻo lắm nha, chụp hình siêu xinh lun, bánh ngon thì không còn gì bàn cải
+                            </p>
+                            <p class="name-sp-review">Sản phẩm: Bánh sinh nhật Socola Trái tim</p>
+                            <p class="number-sp">Số lượng: 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align:center" class="btn-slide">
+                    <span class="dot-rv" onclick="reviewSlide(0)"></span> 
+                    <span class="dot-rv" onclick="reviewSlide(1)"></span> 
+                    <span class="dot-rv" onclick="reviewSlide(2)"></span> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="contact full-width col">
+            <p class="title-footer">Liên hệ</p>
+            <ul class="inf-contact">
+                <li>Gmail: sweetbakery@gmail.com</li>
+                <li>Địa chỉ: 22 Trần Thị Nghĩa, Gò Vấp, TPHCM</li>
+                <li>SDT: 0706811338</li>
+            </ul>
+        </div>
+        <div class="follow-me full-width col">
+            <p class="title-footer">Follow me</p>
+            <div class="icon-society">
+                <img src="../layout/img/facebook.png" alt="" class="icon">
+                <img src="../layout/img/instagram.png" alt="" class="icon">
+                <img src="../layout/img/youtube.png" alt="" class="icon">
+            </div>
+        </div>
+        <div class="menu-footer full-width col">
+            <ul>
+                <li>MENU</li>
+                <li>ABOUT US</li>
+                <li>BLOG</li>
+                <li>SỰ KIỆN</li>
+            </ul>
+        </div>
+        <div class="map full-width col">
+            <!-- <img src="../layout/img/map.png" alt=""> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.794501332877!2d106.67857831395155!3d10.827032561220218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528fc152bbcc1%3A0xce77b7dba4d9b9!2zMjIgVHLhuqduIFRo4buLIE5naOG7iSwgUGjGsOG7nW5nIDcsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1620368741950!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <script src="./assets/slide.js"></script>
+    <script src="./assets/home.js"></script> 
+</body>
+</html>
