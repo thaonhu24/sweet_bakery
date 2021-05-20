@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    AOS.init();
     var aboveHeight = $('.nav').outerHeight();
         $(window).scroll(function(){
             if ($(window).scrollTop() > aboveHeight){
