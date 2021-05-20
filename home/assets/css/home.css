@@ -39,7 +39,6 @@
 }
 #nav-banner{
     position: relative;
-
 }
 .banner{
     position: absolute;
@@ -460,13 +459,14 @@
 .review-slide .btn-slide{
     bottom: 100px;
 }
+
 .img-containt:hover img {
     transform: scale(1.2);
     -webkit-transform:scale(1.25);
     -moz-transform:scale(1.25);
     -ms-transform:scale(1.25);
     -o-transform:scale(1.25);
-    transition: 3s;
+    transition: 2s;
 }
 .icon-close{
     display: none;

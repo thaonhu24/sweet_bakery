@@ -1,0 +1,254 @@
+@font-face{
+    src:url(../../../layout/font/font-work-sans/WorkSans-Bold.otf);
+    font-family: WorkSansB;
+}
+@font-face{
+    src:url(../../../layout/font/font-work-sans/WorkSans-Light.otf);
+    font-family: WorkSans;
+}
+html{
+    font-family: WorkSans;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.col{
+    float: left
+}
+.two-col{
+    width: 50%;
+}
+.three-col{
+    width: 33.33333%;
+    display: inline-block;
+}
+.clear{
+    clear: both;
+}
+.title-banner{
+    text-align: center;
+}
+.banner{
+    height: 80vh;
+    background: url(../img/backgr.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.title-banner{
+    padding: 30vh;
+    font-size: 70px;
+    font-family: WorkSansB;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.breadcrumb {
+    margin: 20px 7%;
+}
+.breadcrumb a{
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(97, 97, 97);
+}
+.breadcrumb .brc-current{
+    color: #000;
+}
+span{
+    font-size: 12px;
+}
+#content{
+    margin: 0 4%;
+}
+.check-box{
+    
+}
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label {
+    color:#f2f2f2;
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:24px;
+    height:24px;
+    margin:0px 10px 4px 0;
+    vertical-align:middle;
+    cursor:pointer;
+    border: rgba(70, 18, 2, 0.445) 2px solid;
+    border-radius: 4px;
+}
+
+input[type="checkbox"]:checked + label span {
+    background-size: 18px 18px;
+    background: url(../img/check.png);
+    background-position: center;
+}
+.title-choose-all{
+    font-size: 24px;
+    font-family: WorkSansB;
+    color: #C7772E;
+    display: inline;
+    line-height: 10px;
+    margin-bottom: 5%;
+    margin-left: 20px;
+}
+.title{
+    margin-bottom: 5%;
+}
+.check-choose-product{
+    width: 5%;
+}
+.img-product img{
+    width: 100%;
+    height: 100%;
+    border: #000 2px solid;
+    object-fit: cover;
+    object-position: center;
+}
+.img-product{
+    margin: 5%;
+    width: 30%;
+    height: 50vh;
+}
+.inf-detail-product{
+    width: 60%;
+}
+.product-member{
+    margin-bottom: 40px;
+}
+.product-inf{
+    width: 90%;
+    background: rgba(174, 84, 0, 0.1);
+}
+.check-choose-product{
+    margin-top: 18%;
+}
+.name-cake{
+    font-family: WorkSansB;
+    font-size: 30px;
+    line-height: 42px;
+    color: #C7772E;
+    width: 70%;
+}
+.inf-detail-product{
+    margin-top: 10%;
+    padding-left: 2%;
+}
+.price-new{
+    width: 30%;
+    font-size: 26px;
+    font-family: WorkSansB;
+    color: #FF0000;
+}
+.price-old{
+    color: rgb(143, 143, 143);
+    text-decoration: line-through;
+    font-size: 20px;
+}
+.type-of-cake span{
+    font-size: 20px;
+}
+.number-of-cake p{
+    display: inline;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.number-of-cake{
+    padding-top: 4%;
+}
+.number-of-cake button{
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 0px;
+    background-color: #C4C4C4;
+    font-size: 16px;
+}
+.number{
+    width: 35px;
+    border: none;
+    background-color: #D9D3CD;
+    padding: 5px;
+    text-align: center;
+    margin: 0 -5px;
+    border-radius: 0px;
+    line-height: 14px;
+}
+.sum-price{
+    margin-top: 7%;
+}
+.titile-sum{
+    font-family: WorkSansB;
+    font-size: 30px;
+    color: #000000;
+
+}
+.sum-price-cake{
+    font-size: 36px;
+    text-align: center;
+    color: #FF0000;
+    font-family: WorkSansB;
+    text-align: right;
+    margin-right: 13%;
+}
+.delete{
+    background: rgba(148, 53, 0, 0.2);
+    border-radius: 30px;
+    border: none;
+    width: 117px;
+    height: 40px;
+    font-size: 24px;
+    color: #FFFFFF;
+    font-family: WorkSansB;
+    padding-top: 3px;
+    float: right;
+    margin-right: 13%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.price{
+    text-align: right;
+}
+.price-total{
+    margin: 5%;
+    margin-bottom: 3%;
+    padding: 10px;
+    background-color: #E1CCB8;
+}
+.name-total{
+    font-size: 26px;
+    color: #8F612B;
+    font-family: WorkSansB;
+}
+.price {
+    font-size: 26px;
+    font-family: WorkSansB;
+    color: #F73333;
+}
+.btn-payment{
+    text-align: right;
+    margin-right: 5%;
+}
+.btn-payment button{
+    background: #FFFFFF;
+    border: 2px solid #A75203;
+    border-radius: 10px;
+    width: 176px;
+    height: 42px;
+    font-size: 18px;
+    padding-top: 4px;
+    color: #E71E1E;
+    font-family: WorkSansB;
+}
+#footer {
+    top: 40px;
+}

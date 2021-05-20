@@ -101,6 +101,15 @@ input:focus{
     padding-left: 6%;
     margin-top:2%;
 }
+.user{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 10px
+}
+#first-header{
+    position: relative;
+}
 .list-menu {
     list-style-type: none;
 }

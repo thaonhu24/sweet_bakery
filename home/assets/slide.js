@@ -20,7 +20,7 @@ function showSlides() {
       slideIndex = 0
     }    
     //tự động chuyển đổi slide sau 5s
-    setTimeout(showSlides, 500000);
+    setTimeout(showSlides, 5000);
 }
 //mặc định hiển thị slide đầu tiên 
 showSlides(slideIndex = 0);

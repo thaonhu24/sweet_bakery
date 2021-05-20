@@ -1,12 +1,10 @@
 $(document).ready(function() {
     var aboveHeight = $('.nav').outerHeight();
         $(window).scroll(function(){
-            console.log($(window).scrollTop());
-            console.log(aboveHeight);
             if ($(window).scrollTop() > aboveHeight){
             $('sticknav').addClass('fixed').css('top','0').next().css('padding-top','0px');
-           $('.nav').css('background-color','rgba(0,0,0,0.7)');
-           $('.img-logo').css('width','7%');
+           $('.nav').css('background-color','rgba(0,0,0,0.8)');
+           $('.img-logo').css('width','6%');
            $('.search-cell').css('top','27px')
             } else {
            $('sticknav').removeClass('fixed').next().css('padding-top','0');
