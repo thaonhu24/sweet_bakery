@@ -105,12 +105,12 @@
 }
    
   @-webkit-keyframes fade-rv {
-    from{transform: translateX(100%); opacity: 0;}
+    from{transform: translateX(-100%); opacity: 0;}
     to{transform: translateX(0);opacity: 1;}
   }
    
   @keyframes fade-rv {
-    from{transform: translateX(-100%);opacity: 0;}
+    from{transform: translateX(100%);opacity: 0;}
     to{transform: translateX(0);opacity: 1;}
   }
 /*banner*/
@@ -486,4 +486,26 @@
     height: 100%;
     opacity: 0.8;
     z-index: 100;
+}
+.nav-menu ul .child-items {
+    position: relative;
+    transition: 0.5s;
+}
+
+.nav-menu ul .child-items::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: auto;
+    right: 0;
+    width: 0;
+    height: 3px;
+    transition: 0.5s;
+    background-color: #d00000;
+}
+
+.nav-menu ul .child-items:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
 }

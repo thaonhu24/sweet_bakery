@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="../layout/footer/footer.css">
     <link rel="stylesheet" href="./assets/css/menu.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="../layout/amination/aos/aos.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
-
+    <script src="../layout/amination/aos/aos.js"></script>
 </head>
 <body>
     <div id="first-header">
@@ -23,7 +24,12 @@
             <a href="../home/home.html">
                 <img src="./assets/img/sweet-bakery.png" alt="">
             </a>
-            <button class="btn-log-up">Đăng kí </button>
+            <a href="../login/login.html" class="login">
+                <button class="btn-log-in">Đăng nhập</button>
+            </a>
+            <a href="../register/register.html">
+                <button class="btn-log-up">Đăng kí </button>
+            </a>
         </div>
         <div class="user">
             <img src="./assets/img/user.png" alt="">
@@ -62,10 +68,10 @@
                 <div class="clear"></div>
             </div>
         </sticknav>
-        <div class="content-banner">
+        <div class="content-banner" data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">
             <h1>MENU</h1>
         </div>
-        <div class="nav-menu-cake">
+        <div class="nav-menu-cake" data-aos="fade-right" data-aos-delay="100"  data-aos-duration="1000">
             <div class="list-menu-cake cheese-cake-btn col">
                 <a href="#neo-menu">
                     <div class="contant-img-cake">
@@ -109,15 +115,15 @@
             <div class="clear"></div>
         </div>
     </div>
-    <div id="content">
+    <div id="content" style="overflow: hidden;">
         <!----------------------------Danh sách menu các món------------------------->
         <div class="menu" id="neo-menu">
             <!-----------------Menu cheese-cake-------------------->
             <div class="menu-cheese-cake">
-                <div class="contain-menu-title">
+                <div class="contain-menu-title" data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">
                     <p class="menu-title">MENU dành cho bạn</p>
                 </div>
-                <div class="list-product">
+                <div class="list-product" data-aos="fade-left" data-aos-delay="100"  data-aos-duration="1000">
                     <div class="produce-member col haft-width  full-width">
                         <div class="sale">
                             <p>50%</p>
@@ -185,7 +191,7 @@
                     </div>
                     <div class="clear"></div>
                 </div>
-                <div class="list-product">
+                <div class="list-product" data-aos="fade-right" data-aos-delay="100"  data-aos-duration="1000">
                     <div class="produce-member col haft-width  full-width">
                         <div class="sale">
                             <p>50%</p>
@@ -255,11 +261,11 @@
                 </div>
             </div>
             <!-----------birthday cake------------->
-            <div class="menu-birthday-cake">
-                <div class="contain-menu-title">
+            <div class="menu-birthday-cake" >
+                <div class="contain-menu-title" data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">
                     <p class="menu-title">MENU dành cho bạn</p>
                 </div>
-                <div class="list-product">
+                <div class="list-product" data-aos="fade-left" data-aos-delay="100"  data-aos-duration="1000">
                     <div class="produce-member col haft-width full-width">
                         <div class="sale">
                             <p>50%</p>
@@ -327,7 +333,7 @@
                     </div>
                     <div class="clear"></div>
                 </div>
-                <div class="list-product">
+                <div class="list-product" data-aos="fade-right" data-aos-delay="100"  data-aos-duration="1000">
                     <div class="produce-member col haft-width full-width">
                         <div class="sale">
                             <p>50%</p>
@@ -398,10 +404,10 @@
             </div>
             <!-----------Macaron cake------------->
             <div class="menu-macaron-cake">
-                <div class="contain-menu-title">
+                <div class="contain-menu-title" data-aos="fade-upt" data-aos-delay="100"  data-aos-duration="1000">
                     <p class="menu-title">MENU dành cho bạn</p>
                 </div>
-                <div class="list-product">
+                <div class="list-product" data-aos="fade-left" data-aos-delay="100"  data-aos-duration="1000">
                     <div class="produce-member col haft-width full-width">
                         <div class="sale">
                             <p>50%</p>
@@ -469,7 +475,7 @@
                     </div>
                     <div class="clear"></div>
                 </div>
-                <div class="list-product">
+                <div class="list-product" data-aos="fade-right" data-aos-delay="100"  data-aos-duration="1000">
                     <div class="produce-member col haft-width full-width">
                         <div class="sale">
                             <p>50%</p>
@@ -540,10 +546,10 @@
             </div>
             <!----------------------------Tiramisu cake-------------------->
             <div class="menu-tiramisu-cake">
-                <div class="contain-menu-title">
+                <div class="contain-menu-title" data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">
                     <p class="menu-title">MENU dành cho bạn</p>
                 </div>
-                <div class="list-product">
+                <div class="list-product" data-aos="fade-left" data-aos-delay="100"  data-aos-duration="1000">
                     <div class="produce-member col haft-width full-width">
                         <div class="sale">
                             <p>50%</p>
@@ -611,7 +617,7 @@
                     </div>
                     <div class="clear"></div>
                 </div>
-                <div class="list-product">
+                <div class="list-product" data-aos="fade-right" data-aos-delay="100"  data-aos-duration="1000">
                     <div class="produce-member col haft-width full-width">
                         <div class="sale">
                             <p>50%</p>
@@ -667,7 +673,7 @@
         </div>
         <!-------------------------------slideshow sản phẩm mới--------------------------->
         <div class="new-cake">
-            <div class="contain-menu-title">
+            <div class="contain-menu-title" data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">
                 <p class="menu-title">Sản phẩm mới</p>
             </div>
             <div class="contain-slideshow-cake">
