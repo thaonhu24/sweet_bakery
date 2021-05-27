@@ -2,6 +2,10 @@
     src:url(../../font/font-work-sans/WorkSans-Light.otf);
     font-family: WorkSans;
 }
+@font-face{
+    src:url(../../../layout/font/font-work-sans/WorkSans-Bold.otf);
+    font-family: WorkSansB;
+}
 *{
     margin: 0;
     padding: 0;
@@ -152,3 +156,203 @@ sticknav {
     animation-duration: 5s;
 }
     /* Kết thúc Stick Nav */
+    #over {
+        display: none;
+        background: rgba(0, 0, 0, 0.404);
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        z-index: 100;
+    }
+    .nav-menu ul .child-items {
+        position: relative;
+        transition: 0.5s;
+    }
+    
+    .nav-menu ul .child-items::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: auto;
+        right: 0;
+        width: 0;
+        height: 3px;
+        transition: 0.5s;
+        background-color: #d00000;
+    }
+    
+    .nav-menu ul .child-items:hover::after {
+        width: 100%;
+        left: 0;
+        right: auto;
+    }
+    /*Responsive header sương sương, mỗi trang có thể sẽ lỗi khác nhau*/
+    @media (min-width: 1024px) and (max-width:1200px){
+        .cart {
+            width: 2%;
+            margin-top: 3%;
+        }
+        .list-menu li a {
+            margin: 4px 8px;
+            font-size: 19px;
+        }
+        .nav-menu {
+            width: 57%;
+            padding-left: 6%;
+            margin-top: 3%;
+        }
+        .content-banner {
+            left: 6%;
+        }
+        .name-sp {
+            padding: 8px 22px;
+        }
+        .img-containt {
+            height: 126px;
+        }
+    }
+    @media (min-width: 768px) and (max-width:1023px){
+        .cart {
+            width: 2%;
+            margin-top: 3%;
+        }
+        .list-menu li a {
+            margin: 4px 6px;
+            font-size: 14px;
+        }
+        .nav-menu {
+            width: 57%;
+            padding-left: 6%;
+            margin-top: 3%;
+        }
+        .content-banner {
+            left: 6%;
+        }
+        .search-cell {
+            top: 16px !important;
+        }
+        ::placeholder{
+            font-size: 10px;
+        }
+        #footer {
+            top: 386px;
+        }
+        #footer .title-footer {
+            font-size: 22px;
+        }
+        .inf-contact {
+            font-size: 10px;
+            letter-spacing: 0.7px;
+        }
+        .follow-me img {
+            width: 26px;
+        }
+        .menu-footer ul li {
+            font-size: 16px;
+        }
+        .map iframe {
+            width: 100%;
+            height: 166px;
+        }    
+    }
+    @media (max-width: 767px){
+        .list-menu li{
+            display: block;
+            padding: 10px;
+            border-bottom: rgba(158, 158, 158, 0.63) 0.4px solid;
+        }
+        .list-menu li:hover{
+            background-color: rgba(170, 170, 170, 0.575);
+        }
+        .list-menu li a{
+            font-size: 14px;
+            margin: 4px 0px
+        }
+        .nav-menu {
+            padding: 10px;
+            width: 34%;
+            position: absolute;
+            top:16px;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);;
+        }
+        .search-input {
+            
+            padding: 2px 2px;
+        }
+        .full-width{
+            width: 100%;
+        }
+        .haft-width{
+            width: 44%;
+        }
+        #first-header{
+            font-size: 10px;
+        }
+        .time-open-close p{
+            margin-right: 7px;
+        }
+        .btn-header button {
+            width: 57px;
+            font-size: 8px;
+            padding: 1px 7px;
+            padding-top: 2px;
+        }
+        .nav-menu{
+            display: none;
+            height: 100vh;
+            width: 50vw;
+            margin: 0;
+            padding: 0;
+        }   
+        
+        .search-cell {
+            top: 0px !important;
+            width: 30%;
+        }
+        ::placeholder{
+            font-size: 8px;
+        }
+        .img-search {
+            width: 12px;
+            right: 0;
+            bottom: 5px;
+        }
+        .sweet-header{
+            font-size: 80px;
+        }
+        .cart {
+            position: absolute;
+            right: 26px;
+        }
+        .icon-menu{
+            position: absolute;
+            top: 8px;
+            right: 7px;
+            font-size: 12px;
+            color: rgb(216, 215, 215);
+        }
+       
+        .icon-close{
+            display: none;
+        }
+        .icon-open{
+            display: block ;
+        }
+        
+        .contact, .follow-me,.menu-footer,.map{
+            margin-bottom: 20px;
+        }
+        #footer .title-footer {
+            font-size: 20px;
+        }
+        .inf-contact {
+            font-size: 10px;
+        }
+        .menu-footer ul li {
+            font-size: 16px;
+        }
+    }

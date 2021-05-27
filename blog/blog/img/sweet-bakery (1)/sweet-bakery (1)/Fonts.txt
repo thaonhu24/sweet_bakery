@@ -1,9 +1,0 @@
-Fonts used in this design:
-
-Font: Allura
-Author: TypeSETit
-Url: http://www.fontsquirrel.com/fonts/allura
-
-Font: Bebas Neue
-Author: Fontfabric
-Url: http://www.fontsquirrel.com/fonts/bebas-neue
